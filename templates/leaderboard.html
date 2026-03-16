@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Leaderboard</title>
+<link rel="stylesheet" href="/static/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="logo">Leaderboard</div>
+
+<table>
+
+<tr>
+<th>User</th>
+<th>Score</th>
+</tr>
+
+{% for row in data %}
+
+<tr>
+<td>{{row[0]}}</td>
+<td>{{row[1]}}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>
